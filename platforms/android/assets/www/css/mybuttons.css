@@ -1,0 +1,213 @@
+.label-packages-custome
+{
+	font-size: 12px;
+	color: #333333;
+	font-family: 'Open Sans', sans-serif;
+}
+.text-input-custome
+{
+	display: inline-block !important;
+	width: 80% !important;
+	box-sizing: border-box;
+	background-color: rgba(255,255,255,0.4);
+    font-size: 12px;
+    color: #666;
+    border: solid 1px #cacaca;
+	height: 30px;
+	padding-left: 5px;
+}
+.number-input-custome
+{
+	display: inline-block !important;
+	width: 30% !important;
+	box-sizing: border-box;
+	background-color: rgba(255,255,255,0.4);
+    font-size: 12px;
+    color: #666;
+    border: solid 1px #cacaca;
+	height: 30px;
+	padding-left: 5px;
+}
+.minus-button-custome
+{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	mim-witdh: 30px;
+	max-witdh: 30px;
+	overflow: visible;
+	margin-bottom: 5px;
+	font-size: 12px;
+	border: solid 1px transparent;
+	vertical-align: top;
+	background-image: url(../img/Minus-50.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.minus-button-custome:hover
+{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	mim-witdh: 30px;
+	max-witdh: 30px;
+	overflow: visible;
+	margin-bottom: 5px;
+	font-size: 12px;
+	border: solid 1px transparent;
+	vertical-align: top;
+	background-image: url(../img/Minus-50-active.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.plus-button-custome
+{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	overflow: visible;
+	border: 1px;
+	margin-bottom: 5px;
+	font-size: 12px;
+	border: solid 1px transparent;
+	vertical-align: top;
+	background-image: url(../img/Plus-50.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.plus-button-custome:hover
+{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	overflow: visible;
+	margin-bottom: 5px;
+	font-size: 12px;
+	border: solid 1px transparent;
+	vertical-align: top;
+	background-image: url(../img/Plus-50-active.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.search-button-custome
+{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	overflow: visible;
+	margin-bottom: 5px;
+	font-size: 12px;
+	border: solid 1px transparent;
+	vertical-align: top;
+	background-image: url(../img/Search-50.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.search-button-custome:hover
+{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	overflow: visible;
+	margin-bottom: 5px;
+	font-size: 12px;
+	border: solid 1px transparent;
+	vertical-align: top;
+	background-image: url(../img/Search-50-active.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.check-button-custome
+{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	overflow: visible;
+	margin-bottom: 5px;
+	font-size: 12px;
+	border: solid 1px transparent;
+	vertical-align: top;
+	background-image: url(../img/Checked-50.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.check-button-custome:hover
+{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	overflow: visible;
+	margin-bottom: 5px;
+	font-size: 12px;
+	border: solid 1px transparent;
+	vertical-align: top;
+	background-image: url(../img/Checked-50-active.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.cancel-button-custome
+{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	overflow: visible;
+	margin-bottom: 5px;
+	font-size: 12px;
+	border: solid 1px transparent;
+	vertical-align: top;
+	background-image: url(../img/Cancel-50.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.cancel-button-custome:hover
+{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	overflow: visible;
+	margin-bottom: 5px;
+	font-size: 12px;
+	border: solid 1px transparent;
+	vertical-align: top;
+	background-image: url(../img/Cancel-50-active.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.decoration-custome
+{
+	margin-bottom: 10px !important;
+}
+.p-custome
+{
+	margin-bottom: 10px;
+}
+.setting-button-custome
+{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	overflow: visible;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-size: 12px;
+	border: solid 1px transparent;
+	vertical-align: top;
+	background-image: url(../img/Settings-50.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.setting-button-custome:hover
+{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	overflow: visible;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-size: 12px;
+	border: solid 1px transparent;
+	vertical-align: top;
+	background-image: url(../img/Settings-50-active.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}

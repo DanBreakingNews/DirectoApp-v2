@@ -1,0 +1,71 @@
+.button-custom-inline
+{
+	width:30%; 
+	font-size: 9px;
+}
+
+.link-custom
+{
+	font-size: 9px !important; 
+}
+
+.button-custom-deitel
+{
+	color: #444 !important; 
+	font-size: 9px !important;
+	text-transform: capitalize !important;
+}
+
+.title-custom
+{
+	color: #636060 !important;
+}
+
+.icon-pendiente-custom
+{
+    background-image: url(../theme/images/lists/warning_16.png);
+	background-position: right 6px;
+	background-repeat: no-repeat;
+}
+
+.icon-aceptada-custom
+{
+    background-image: url(../theme/images/lists/tick_16.png);
+	background-position: right 6px;
+	background-repeat: no-repeat;
+}
+.icon-completa-custom
+{
+    background-image: url(../theme/images/lists/flag_16.png);
+	background-position: right 6px;
+	background-repeat: no-repeat;
+}
+.half-column-custom
+{
+	background-color: #FFF0 !important;
+}
+
+.half-col-icon-custome
+{
+	margin: auto;
+}
+.login-logo-custom
+{
+	margin: auto;
+	width: 85%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.ok-button-custome
+{
+	color: #5a742d !important;  
+	text-transform: capitalize !important;
+	font-size: 9px !important;
+}
+
+.cancel-button-custom
+{
+	color: #923c47 !important; 
+	text-transform: capitalize !important;
+	font-size: 9px !important;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+		<!-- Stylesheet Load -->
+		<link href="theme/styles/style.css" rel="stylesheet" type="text/css">
+		<link href="theme/styles/framework-style.css" rel="stylesheet" type="text/css">
+		<link href="theme/styles/framework.css" rel="stylesheet" type="text/css">
+		<link href="theme/styles/coach.css" rel="stylesheet" type="text/css">
+		<link href="theme/styles/icons.css" rel="stylesheet" type="text/css">
+		<link href="theme/styles/retina.css" rel="stylesheet" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+		<link href="css/mybuttons.css" rel="stylesheet" type="text/css">
+		
+		<script src="cordova.js"></script>
+		
+		<!--Page Scripts Load -->
+		<script src="theme/scripts/jquery.min.js" type="text/javascript"></script>	
+		<script src="theme/scripts/jquery-ui-min.js" type="text/javascript"></script>
+		<script src="theme/scripts/colorbox.js" type="text/javascript"></script>
+		<script src="theme/scripts/hammer.js" type="text/javascript"></script>	
+		<script src="theme/scripts/subscribe.js" type="text/javascript"></script>
+		<script src="theme/scripts/contact.js" type="text/javascript"></script>
+		<script src="theme/scripts/swipe.js" type="text/javascript"></script>
+		<script src="theme/scripts/swipebox.js" type="text/javascript"></script>
+		<script src="theme/scripts/retina.js" type="text/javascript"></script>
+		<script src="theme/scripts/custom.js" type="text/javascript"></script>
+		<script src="theme/scripts/framework.js" type="text/javascript"></script>
+        <script src="js/configFunctions.js"></script>
+	
+		<title>Config</title>
+    </head>
+    <body onload="initConfig()">
+	
+	<div id="preloader">
+		<div id="status">
+			<p class="center-text">
+				Cargando informaci&oacute;n...
+				<em>Espere un momento mientras se lee la informaci&oacute;</em>
+			</p>
+		</div>
+	</div>
+	
+	<div >
+        <div class="content">
+			<div class="decoration"></div>
+			<div class="container no-bottom">
+            <div class="contact-form no-bottom"> 
+				<div style="width: 100%; height: 30px; ">
+					<h6 style="display: inline-block; font-size: 14px; vertical-align: -webkit-baseline-middle;">Datos de Conexi&oacute;n</h6>
+				</div>
+				<div class="decoration-custome decoration"></div> 
+				
+				<div style="padding: 5px; width: 100%;"></div>
+				<form action="" method="post" class="contactForm" id="contactForm">
+                    <fieldset>
+                        <div class="formFieldWrap">
+                            <input type="text" name="ip" value="" class="contactField requiredField" id="ip" placeholder="Direcci&oacute;n IP"/>
+                        </div>
+                        <div class="formFieldWrap">
+                            <input type="text" name="port" value="" class="contactField requiredField requiredEmailField" id="port" placeholder="Puerto"/>
+                        </div>
+						<a onclick="saveSettings();" 
+							style="float: right;"
+							class="no-bottom demo-button button-minimal grey2-minimal">Guardar</a>
+                    </fieldset>
+                </form>  
+				
+            </div>
+        </div>
+        </div>
+	</div>
+    </body>
+</html>

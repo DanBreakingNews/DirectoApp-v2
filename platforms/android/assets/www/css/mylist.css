@@ -1,0 +1,19 @@
+.list-container-custom
+{	
+	margin-bottom: 10px !important;	
+}
+.list-container-custom:hover
+{	
+	margin-bottom: 10px !important;	
+	background-color: #dcf9ff;
+    border: 1px solid #b9d9e9;
+}
+.link-custom
+{
+	text-transform: none !important;
+	
+}
+.separator-custom
+{
+	padding-bottom: 10px;
+}

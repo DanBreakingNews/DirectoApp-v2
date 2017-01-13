@@ -1,0 +1,70 @@
+<html>
+    <head>
+		<link href="css/mylist.css"				rel="stylesheet" 	type="text/css">
+		<!-- Stylesheet Load -->
+		<link href="theme/styles/style.css"				rel="stylesheet" 	type="text/css">
+		<link href="theme/styles/framework-style.css" 	rel="stylesheet" 	type="text/css">
+		<link href="theme/styles/framework.css" 			rel="stylesheet" 	type="text/css">
+		<link href="theme/styles/coach.css"				rel="stylesheet" 	type="text/css">
+		<link href="theme/styles/icons.css"				rel="stylesheet" 	type="text/css">
+		<link href="theme/styles/retina.css" 				rel="stylesheet" 	type="text/css" 	media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+		
+		<!--Page Scripts Load -->
+		<script src="theme/scripts/jquery.min.js"		type="text/javascript"></script>	
+		<script src="theme/scripts/jquery-ui-min.js"  type="text/javascript"></script>
+		<script src="theme/scripts/colorbox.js"		type="text/javascript"></script>
+		<script src="theme/scripts/hammer.js"			type="text/javascript"></script>	
+		<script src="theme/scripts/subscribe.js"		type="text/javascript"></script>
+		<script src="theme/scripts/contact.js"		type="text/javascript"></script>
+		<script src="theme/scripts/swipe.js"			type="text/javascript"></script>
+		<script src="theme/scripts/swipebox.js"		type="text/javascript"></script>
+		<script src="theme/scripts/retina.js"			type="text/javascript"></script>
+		<script src="theme/scripts/custom.js"			type="text/javascript"></script>
+		<script src="theme/scripts/framework-custom.js"		type="text/javascript"></script>
+		
+		<script src='js/mustache.js' type='text/javascript'></script>
+		<script src="js/listClientBranches.js" type="text/javascript"></script>
+		<script src="js/configFunctions.js"></script>
+		
+		<title>Lista</title>
+    </head>
+    <body onload="initListClientBranches()">
+		
+		<div id="preloader">
+			<div id="status">
+				<p class="center-text">
+					Cargando...
+					<em>El tiempo que tarde depende de la velocidad del internet</em>
+				</p>
+			</div>
+		</div>
+		
+        <div class="content">
+			<div class="container no-bottom">
+			
+				<div class="separator-custom"></div>
+				
+				<div id="error-box" style="display: none;" class="notification-box red-box">
+                    <h4>Error</h4>
+					<div class="clear"></div>
+					<p>
+						No hay elementos para mostrar, hable con el administrador de la consola para resolver este problema  
+					</p>  
+				</div>    
+				
+				<div id="list-container-custom" style="width: 100%">
+				</div>
+				<script id="template01" type="text/template">
+					<div class="list-container-custom toggle-container-v4" onclick="branchSelected('{{branch_pk}}','{{branch_pde}}','{{branch_name}}','{{branch_address}}')">
+						<div class="toggle-v4">
+							<a class="link-custom" style="color: #e34e47 !important;">{{branch_name}}</a>
+							<br />
+							
+						</div>
+					</div>
+				</script>
+				
+			</div>
+        </div>
+    </body>
+</html>

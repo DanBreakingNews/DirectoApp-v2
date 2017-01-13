@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" 		content="Epsilon, mobile, framework, css3, html5, javascript, retina" />
+<meta name="Description" 	content="Epsilon based mobile retina webpp template!" />
+<!--Favicon shortcut link-->
+<link type="image/x-icon"  rel="shortcut icon" href="theme/images/splash/favicon.ico" />
+<link type="image/x-icon"  rel="icon"		   href="theme/images/splash/favicon.ico" />
+<!--Declare page as mobile friendly --> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Declare page as iDevice WebApp friendly -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon" sizes="114x114" href="theme/images/splash/splash-icon.png"> 
+<link rel="apple-touch-startup-image" href="theme/images/splash/splash-screen.png" media="screen and (max-device-width: 320px)" /> 
+<link rel="apple-touch-startup-image" href="theme/images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" href="theme/images/splash/splash-screen@3x.png" sizes="640x1096">
+
+<!-- Page Title -->
+<title>Epsilon Framework</title>
+
+<!-- Stylesheet Load -->
+<link href="theme/styles/style.css"	rel="stylesheet" 	type="text/css">
+<link href="theme/styles/framework-style.css" rel="stylesheet" 	type="text/css">
+<link href="theme/styles/framework.css" rel="stylesheet" 	type="text/css">
+<link href="theme/styles/coach.css" rel="stylesheet" 	type="text/css">
+<link href="theme/styles/icons.css" rel="stylesheet" 	type="text/css">
+<link href="theme/styles/retina.css" rel="stylesheet" 	type="text/css" 	media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+
+<link href="css/mystyles.css"	rel="stylesheet" 	type="text/css">
+<link href="css/mytrecolecta.css"	rel="stylesheet" 	type="text/css">
+
+<!--Page Scripts Load -->
+<script src="theme/scripts/jquery.min.js"		type="text/javascript"></script>	
+<script src="theme/scripts/jquery-ui-min.js"  type="text/javascript"></script>
+<script src="theme/scripts/colorbox.js"		type="text/javascript"></script>
+<script src="theme/scripts/hammer.js"			type="text/javascript"></script>	
+<script src="theme/scripts/subscribe.js"		type="text/javascript"></script>
+<script src="theme/scripts/contact.js"		type="text/javascript"></script>
+<script src="theme/scripts/swipe.js"			type="text/javascript"></script>
+<script src="theme/scripts/swipebox.js"		type="text/javascript"></script>
+<script src="theme/scripts/retina.js"			type="text/javascript"></script>
+<script src="theme/scripts/custom.js"			type="text/javascript"></script>
+<script src="theme/scripts/framework.js"		type="text/javascript"></script>
+
+<script src='js/mustache.js'				type='text/javascript'></script>
+<script src='js/trecolectaFunctions.js'		type='text/javascript'></script>
+<script src="cordova.js" type="text/javascript" charset="utf-8" ></script>
+</head>
+
+<body onload="initTRecolecta()">
+
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Cargando...
+            <em>El tiempo que tarde depende de la velocidad del internet</em>
+        </p>
+    </div>
+</div>
+
+
+<div class="header">
+	<a href="#" class="deploy-left-sidebar"></a>
+	<a href="#" class="deploy-right-sidebar"></a>
+    <a href="#" class="top-logo"><img src="theme/images/misc/logo.png" class="replace-2x" width="125" alt="img"></a>
+</div>
+
+<div class="content-box shadow">
+    <div class="content">
+		<div class="container no-bottom">
+			
+			<div id="group01" class="column">
+            	<div class="half-column-custom portfolio-item-thumb one-half">
+                	<a id="a01" onclick="goToGuia()">
+						<img class="half-col-icon-custome" src="img/add96.png" alt="img" width="45">
+						Crear Gu&iacute;a
+                    </a>
+                	<h6 class="uppercase"></h6>
+                </div>
+                <div class="portfolio-item-thumb one-half">
+                	<a id="a02" onclick="goToFirma()">
+                    	<img class="half-col-icon-custome" src="img/Signature-96.png" alt="img" width="45">
+                        Firma
+                    </a>
+                </div>
+            </div>  
+		
+			<div id="group02" class="column">
+            	<div class="half-column-custom portfolio-item-thumb one-half">
+                	<a id="a03" onclick="goToCamera()">
+						<img class="half-col-icon-custome" src="img/camera96.png" alt="img" width="45">
+						Foto
+                    </a>
+                	<h6 class="uppercase"></h6>
+                </div>
+                <div class="portfolio-item-thumb one-half">
+                	<a id="a04" onclick="">
+                    	<img class="half-col-icon-custome" src="img/check96.png" alt="img" width="45">
+                        Finalizar
+                    </a>
+                </div>
+            </div>  
+			
+			<table id="table-guias" class="table-custom table" style="display: none;" cellspacing='0'>
+                
+            </table>
+			
+			<script id="tableTemplate01" type="text/template">
+				<tr>
+                    <th class="cell-label-custom">N° Gu&iacute;a</th>
+                    <th class="cell-value-custom">Acci&oacute;n</th>
+                </tr>
+			</script>
+			
+			<script id="tableTemplate02" type="text/template">
+				<tr>
+                    <td class="cell-label-custom">{{name}}</td>
+                    <td class="cell-value-custom">
+						<a onclick="editGuia('{{taskId}}','{{name}}')" style="display: inline-block;">Editar</a>&nbsp;&nbsp;&nbsp;
+						<a onclick="deleteGuia('{{taskId}}','{{name}}')" style="display: inline-block;">Borrar</a>
+					</td>
+                </tr>
+			</script>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="sidebar-left">
+	<div class="sidebar-scroll-left">
+    	<div class="sidebar-header-left">
+			<img src="theme/images/misc/logo-sidebar.png" class="sidebar-left-logo replace-2x" width="125" alt="img">
+        	<a href="#" class="close-sidebar-left"></a>
+    	</div>
+    
+        <p class="sidebar-divider-text">MENU</p>
+        <a href="home.html" class="nav-item home-nav">Inicio<em class="icon-page"></em></a>
+		<a href="home.html" class="nav-item printer-nav">Config impresora<em class="icon-page"></em></a>
+		<a href="" class="nav-item logout-nav">Salir<em class="icon-page"></em></a>
+		
+        <div class="sidebar-decoration"></div>
+        
+        
+    </div>
+</div>
+
+<div class="sidebar-right">
+	<div class="sidebar-scroll-right">
+    	<div class="sidebar-header-right">
+        	<a href="#" class="close-sidebar-right"></a>
+			<img src="theme/images/misc/logo-sidebar.png" class="sidebar-right-logo replace-2x" width="125" alt="img">
+    	</div>
+        
+        <p class="sidebar-divider-text">COMUNICACIONES</p>
+
+        <a href="#" class="nav-item mail-nav deploy-contact-form">ENVIAR CORREO<em class="icon-drop"></em></a>
+        <div class="sidebar-form contact-form"> 
+            <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                <div class="notification-box blue-box">
+                    <h4>MENSAJE ENVIADO!</h4>
+                    <!--<a href="#" class="close-notification">x</a>-->
+                    <div class="clear"></div>
+                    <p>
+						Su mensaje ha sido enviado.
+                    </p>  
+                </div> 
+            </div>
+            <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                <div class="formSubmitButtonErrorsWrap">                       
+                    <div class="formValidationError" id="contactNameFieldError">
+                        <div class="small-notification red-notification no-bottom">
+                            <p>El nombre es requerido</p>
+                        </div>
+                    </div>             
+                    <div class="formValidationError" id="contactEmailFieldError">
+                        <div class="small-notification red-notification no-bottom">
+                            <p>El correo es requerido</p>
+                        </div>
+                    </div> 
+                    <div class="formValidationError" id="contactEmailFieldError2">
+                        <div class="small-notification red-notification no-bottom">
+                            <p>El correo no tiene el formato correcto</p>
+                        </div>
+                    </div> 
+                    <div class="formValidationError" id="contactMessageTextareaError">
+                        <div class="small-notification red-notification no-bottom">
+                            <p>El mensaje no puede quedar vacio</p>
+                        </div>
+                    </div>   
+                </div>
+                <fieldset>
+                    <div class="formFieldWrap">
+                        <label class="contactNameField" for="contactNameField">Nombre:<span>req</span></label>
+                        <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField"/>
+                    </div>
+                    <div class="formFieldWrap">
+                        <label class="contactEmailField" for="contactEmailField">Correo: <span>requerido</span></label>
+                        <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
+                    </div>
+                    <div class="formTextareaWrap">
+                        <label class="contactMessageTextarea" for="contactMessageTextarea">Mensaje: <span>requerido</span></label>
+                        <textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+                    </div>
+                        <div class="formSubmitButtonErrorsWrap">                       
+                            <input type="submit" class="buttonWrap sidebar-send-button contactSubmitButton" id="contactSubmitButton" value="Submit" data-formId="contactForm"/>
+                        </div>
+                </fieldset>
+            </form>       
+        </div>        
+        
+        <a href="tel:+50496001048" class="nav-item call-nav">Llamar<em class="icon-page"></em></a>
+        <a href="sms:+50496001048" class="nav-item text-nav">Enviar SMS<em class="icon-page"></em></a>
+        
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
